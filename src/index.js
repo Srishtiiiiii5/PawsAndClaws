@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import 'antd/dist/reset.css';
+import { Toaster } from 'react-hot-toast';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
     <App />
+    <Toaster
+        position="top-center"  // Set the position where toasts will appear
+        reverseOrder={false}   // Optional, whether to show new toasts on top or bottom
+      />
     </BrowserRouter>
   </React.StrictMode>
 );

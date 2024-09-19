@@ -12,23 +12,23 @@ import ProductDetailsPage from './pages/ProductDetailsPage';
 import CartPage from './pages/CartPage';
 import ProfilePage from './pages/ProfilePage';
 import Navbar from './components/Navbar';
+import CheckoutPage from './pages/CheckoutPage';
+import ThankYouPage from './pages/ThankYouPage';
 
 
 
 function App() {
   return (
-    <>
+    <div className='bg-white'>
     <Navbar/>
     <Routes>
-        <Route path={'/'} element={<HomePage />} />
         <Route path={'/login'} element={<LoginPage />} />
-        <Route path={'/products'} element={<ProductsPage/>} />
-        <Route path={'/products'} element={<AllProductsPage/>} />
+        <Route path={'/'} element={<ProductsPage/>} />
         <Route path={'/products/:id'} element={<ProductDetailsPage/>} />
-        <Route path={'/account/cart'} element={<CartPage/>} />
-        <Route path={'/account/profile'} element={<ProfilePage/>} />
+        <Route path={'/checkout'} element={<CheckoutPage/>} />
+        <Route path={'/thankyou'} element={<ThankYouPage/>} />
     </Routes>
-    </>
+    </div>
   );
 }
 
