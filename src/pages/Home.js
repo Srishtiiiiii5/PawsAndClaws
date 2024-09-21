@@ -77,15 +77,13 @@ const Home = () => {
               ensure your pets live their happiest lives.
             </p>
 
-            <a href="#" className="text-indigo-600 font-semibold underline">
-              Learn more
-            </a>
+
           </div>
 
           {/* Right Side - Image */}
           <div className="w-1/2 flex justify-center">
             <img
-              src="/assets/Home/section3.png" // Replace with the correct path of your image
+              src="../Assets/Home/section3.png" // Replace with the correct path of your image
               alt="Happy Pet"
               className="w-[75%] object-contain"
             />
@@ -101,11 +99,11 @@ const Home = () => {
       </div>
       <div className="flex w-full p-10">
         <div className="bg-base-300 rounded-box grid flex-grow place-items-center">
-          <img src="/assets/Home/section5a.png" />
+          <img src="../Assets/Home/section5a.png" />
         </div>
         <div className="divider divider-horizontal"></div>
         <div className="bg-base-300 rounded-box grid flex-grow place-items-center">
-          <img src="/assets/Home/section5b.png" />
+          <img src="../Assets/Home/section5b.png" />
         </div>
       </div>
 
