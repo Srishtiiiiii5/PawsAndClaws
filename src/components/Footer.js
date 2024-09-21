@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center bg-black text-white p-10">
+      <footer className="footer footer-center bg-[#FFDDCC] text-black p-10">
         <aside>
-          <img src="/Assets/logo.jpeg" className='h-24 w-24' />
+          <img src="/Assets/logo.png" className='h-24 w-24' />
           <p className="font-bold">
             PawsAndClaws
             <br />

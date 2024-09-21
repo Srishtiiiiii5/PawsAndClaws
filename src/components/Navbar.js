@@ -50,10 +50,10 @@ const Navbar = () => {
   },[token])
 
   return (
-    <div className="navbar bg-black text-white p-1">
+    <div className="navbar justify-evenly bg-[#FFDDCC] text-black p-1">
       <div className="flex-1">
         <a className="btn btn-ghost">
-          <img src= "/Assets/logo.jpeg" className="w-14 h-14"/>
+          <img src= "/Assets/logo.png" className="w-14 h-14"/>
         </a>
       </div>
       <div className="flex-none p-2 space-x-3">

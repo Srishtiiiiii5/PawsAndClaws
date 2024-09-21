@@ -114,7 +114,7 @@ const ProductGrid = ({ products }) => {
                 toast.success('Item added to cart');
               }}
               type="primary"
-              className="bg-black rounded-lg text-lg py-6"
+              className="bg-[#FFDDCC] text-black font-bold rounded-lg text-lg py-6"
             >
               Add to Cart
             </Button>

@@ -94,7 +94,7 @@ const Home = () => {
       </div>
       {/*-----------------------Page 5----------------------- */}
 
-      <div className="bg-slate-600">
+      <div className="bg-[#FFDDCC]">
         <h1 className="text-6xl font-bold text-black uppercase tracking-widest text-center p-6">
           COOLEST T-SHIRTS
         </h1>
