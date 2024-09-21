@@ -13,6 +13,7 @@ import CheckoutPage from './pages/CheckoutPage';
 import ThankYouPage from './pages/ThankYouPage';
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import Insurance from './pages/Insurance';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path={'/login'} element={<LoginPage />} />
         <Route path={'/'} element={<Home/>} />
         <Route path={'/home'} element={<ProductsPage/>} />
+        <Route path={'/insurance'} element={<Insurance/>} />
         <Route path={'/products/:id'} element={<ProductDetailsPage/>} />
         <Route path={'/checkout'} element={<CheckoutPage/>} />
         <Route path={'/thankyou'} element={<ThankYouPage/>} />
