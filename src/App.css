@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.custom-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: black !important;
+    /* Ensure the active tab text is black */
+}
+
+.custom-tabs .ant-tabs-ink-bar {
+    background-color: black !important;
+    /* Set the underline to black */
+}

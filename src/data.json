@@ -291,8 +291,8 @@
         "id": 19,
         "Animal_type": "Cat",
         "Product_type": "Accessories",
-        "Product_name": "Cat Harness",
-        "image_url": "../Assets/AccessoriesA1.png",
+        "Product_name": "Cat Collar Denim",
+        "image_url": "../Assets/AccessoriesB1.png",
         "Price": 800,
         "Rating": 4,
         "Reviews": [
@@ -307,8 +307,8 @@
         "id": 20,
         "Animal_type": "Cat",
         "Product_type": "Accessories",
-        "Product_name": "Scratching Post",
-        "image_url": "../Assets/AccessoriesA2.png",
+        "Product_name": "Cat Collar Red",
+        "image_url": "../Assets/AccessoriesB2.png",
         "Price": 1500,
         "Rating": 5,
         "Reviews": [
@@ -323,8 +323,8 @@
         "id": 21,
         "Animal_type": "Cat",
         "Product_type": "Accessories",
-        "Product_name": "Cat Carrier",
-        "image_url": "../Assets/AccessoriesA3.png",
+        "Product_name": "Cat Collar Blue",
+        "image_url": "../Assets/AccessoriesB3.png",
         "Price": 2000,
         "Rating": 4,
         "Reviews": [
@@ -338,9 +338,9 @@
     {
         "id": 22,
         "Animal_type": "Cat",
-        "Product_type": "Bowls and Feeders",
-        "Product_name": "Ceramic Bowl",
-        "image_url": "",
+        "Product_type": "Toys",
+        "Product_name": "Fishing Rod",
+        "image_url": "../Assets/ToysB1.png",
         "Price": 600,
         "Rating": 5,
         "Reviews": [
@@ -354,9 +354,9 @@
     {
         "id": 23,
         "Animal_type": "Cat",
-        "Product_type": "Bowls and Feeders",
-        "Product_name": "Elevated Feeder",
-        "image_url": "",
+        "Product_type": "Toys",
+        "Product_name": "Tracking Device",
+        "image_url": "../Assets/ToysB2.png",
         "Price": 1300,
         "Rating": 4,
         "Reviews": [
@@ -370,9 +370,9 @@
     {
         "id": 24,
         "Animal_type": "Cat",
-        "Product_type": "Bowls and Feeders",
-        "Product_name": "Water Fountain",
-        "image_url": "",
+        "Product_type": "Toys",
+        "Product_name": "Cheering Ball",
+        "image_url": "../Assets/ToysB3.png",
         "Price": 2000,
         "Rating": 5,
         "Reviews": [
@@ -380,102 +380,6 @@
                 "Name": "Lily",
                 "comment": "Encourages my cat to drink more.",
                 "rating": 5
-            }
-        ]
-    },
-    {
-        "id": 25,
-        "Animal_type": "Cat",
-        "Product_type": "Grooming",
-        "Product_name": "Cat Comb",
-        "image_url": "",
-        "Price": 300,
-        "Rating": 4,
-        "Reviews": [
-            {
-                "Name": "Leo",
-                "comment": "Removes loose fur.",
-                "rating": 4
-            }
-        ]
-    },
-    {
-        "id": 26,
-        "Animal_type": "Cat",
-        "Product_type": "Grooming",
-        "Product_name": "Fur Detangler",
-        "image_url": "",
-        "Price": 1000,
-        "Rating": 5,
-        "Reviews": [
-            {
-                "Name": "Sophia",
-                "comment": "Helps with mats.",
-                "rating": 5
-            }
-        ]
-    },
-    {
-        "id": 27,
-        "Animal_type": "Cat",
-        "Product_type": "Grooming",
-        "Product_name": "Cat Nail Trimmer",
-        "image_url": "",
-        "Price": 250,
-        "Rating": 4,
-        "Reviews": [
-            {
-                "Name": "Mia",
-                "comment": "Easy to use.",
-                "rating": 4
-            }
-        ]
-    },
-    {
-        "id": 28,
-        "Animal_type": "Cat",
-        "Product_type": "Supplements",
-        "Product_name": "Hairball Remedy",
-        "image_url": "",
-        "Price": 1200,
-        "Rating": 5,
-        "Reviews": [
-            {
-                "Name": "Daniel",
-                "comment": "Reduces hairballs.",
-                "rating": 5
-            }
-        ]
-    },
-    {
-        "id": 29,
-        "Animal_type": "Cat",
-        "Product_type": "Supplements",
-        "Product_name": "Omega-3",
-        "image_url": "",
-        "Price": 1500,
-        "Rating": 4,
-        "Reviews": [
-            {
-                "Name": "Grace",
-                "comment": "Helps with coat.",
-                "rating": 4
-            }
-        ]
-    },
-    {
-        "id": 30,
-        "Animal_type": "Cat",
-        "Product_type": "Supplements",
-        "Product_name": "Vitamin Paste",
-        "image_url": "",
-        "Price": 800,
-        "Rating": 4,
-        "Reviews": [
-            {
-                "Name": "Jack",
-                "comment": "Boosts energy.",
-                "rating": 4
             }
         ]
     },
@@ -530,9 +434,9 @@
     {
         "id": 34,
         "Animal_type": "Cat",
-        "Product_type": "Clothing",
-        "Product_name": "Cat Sweater",
-        "image_url": "",
+        "Product_type": "Furniture",
+        "Product_name": "Cat Wall Stand",
+        "image_url": "../Assets/FurnitureB3.png",
         "Price": 900,
         "Rating": 5,
         "Reviews": [
@@ -546,9 +450,9 @@
     {
         "id": 35,
         "Animal_type": "Cat",
-        "Product_type": "Clothing",
-        "Product_name": "Cat Scarf",
-        "image_url": "",
+        "Product_type": "Furniture",
+        "Product_name": "Cat Wall Chair",
+        "image_url": "../Assets/FurnitureB2.png",
         "Price": 500,
         "Rating": 4,
         "Reviews": [
@@ -562,9 +466,9 @@
     {
         "id": 36,
         "Animal_type": "Cat",
-        "Product_type": "Clothing",
-        "Product_name": "Cat Hoodie",
-        "image_url": "",
+        "Product_type": "Furniture",
+        "Product_name": "Cat Swing",
+        "image_url": "../Assets/FurnitureB1.png",
         "Price": 1200,
         "Rating": 4,
         "Reviews": [
