@@ -9,6 +9,7 @@ const { Option } = Select;
 
 
 const ProductsPage = () => {
+
   const [selectedAnimal, setSelectedAnimal] = useState('Dog');
   const [filteredType, setFilteredType] = useState('All');
 

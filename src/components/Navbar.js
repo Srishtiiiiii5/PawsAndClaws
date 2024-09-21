@@ -44,7 +44,9 @@ const Navbar = () => {
   return (
     <div className="navbar bg-white text-black">
       <div className="flex-1">
-        <a className="btn btn-ghost text-2xl">daisyUI</a>
+        <a className="btn btn-ghost">
+          <img src= "/Assets/logo.jpeg" className="w-24 h-24"/>
+        </a>
       </div>
       <div className="flex-none p-2 space-x-3">
         <div onClick={showDrawer} className="dropdown dropdown-end">
