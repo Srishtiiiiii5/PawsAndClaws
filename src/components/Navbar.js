@@ -50,19 +50,28 @@ const Navbar = () => {
   },[token])
 
   return (
-    <div className="navbar justify-evenly bg-[#FFDDCC] text-black p-1">
+    <div className="navbar justify-evenly px-40 bg-[#FFDDCC] text-black p-2">
       <div className="flex-1">
         <a className="btn btn-ghost">
           <img src= "/Assets/logo.png" className="w-14 h-14"/>
         </a>
       </div>
-      <div className="flex-none p-2 space-x-3">
+      <div className="flex-none p-2 space-x-5">
+        <div onClick={()=>navigate('/')} className='text-xl text-white cursor-pointer'>
+          Home
+        </div>
+        <div onClick={()=>navigate('/insurance')} className='text-xl text-white cursor-pointer'>
+          Insurance
+        </div>
+        <div onClick={()=>navigate('/products')} className='text-xl text-white cursor-pointer'>
+          Products
+        </div>
         <div onClick={showDrawer} className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost text-black btn-circle">
             <div className="indicator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="white">
@@ -100,6 +109,7 @@ const Navbar = () => {
               localStorage.removeItem('UserCart')
               localStorage.removeItem('PawsToken')
               toast.success("Logged out")
+              setToken('');
               navigate('/')
               
             }}>Logout</a></li>}
