@@ -14,6 +14,7 @@ const CheckoutPage = ({setCheckoutModalOpen}) => {
 
     if(!token) {
       toast.error("Please login to continue");
+      setCheckoutModalOpen(false);
       navigate('/login');
     }
     
