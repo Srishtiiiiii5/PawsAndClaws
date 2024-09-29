@@ -6,7 +6,7 @@ const ThankYouPage = () => {
       
 
       <div>
-        <img src="/assets/thankyou.png" className='h-[75vh]'/>
+        <img src="../Assets/thankyou.png" className='h-[75vh]'/>
       </div>
       
     </div>
