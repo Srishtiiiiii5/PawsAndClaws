@@ -114,7 +114,7 @@ const Home = () => {
           <div className="hero bg-black text-white rounded-lg shadow-lg mb-10 h-[75vh]">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <img
-                src="/assets/Products/section1.PNG"
+                src="../Assets/Products/section1.png"
                 className="max-w-sm rounded-lg shadow-2xl"
                 alt="Dog"
               />
