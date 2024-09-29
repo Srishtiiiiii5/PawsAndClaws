@@ -6,7 +6,7 @@ const Insurance = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
         <div>
-        <img src="/assets/insurance/section1.png" className=' h-[75vh]' />
+        <img src="../Assets/Insurance/section1.png" className=' h-[75vh]' />
         </div>
         <div className='flex flex-col bg-[#FFDDCC] text-white w-full justify-center items-center p-20 mt-5'>
             <h2 className='text-4xl font-bold'>🐶Love by 1000+ parents🐶</h2>
@@ -31,7 +31,7 @@ const Insurance = () => {
           </div>
           <figure>
             <img
-              src="/assets/insurance/1.png"
+              src="../Assets/insurance/1.png"
               alt="Step 1 Illustration"
               className="h-36 w-28"
             />
@@ -51,7 +51,7 @@ const Insurance = () => {
           </div>
           <figure>
             <img
-              src="/assets/insurance/2.png"
+              src="../Assets/insurance/2.png"
               alt="Step 2 Illustration"
               className="h-36 w-28"
             />
@@ -71,7 +71,7 @@ const Insurance = () => {
           </div>
           <figure>
             <img
-              src="/assets/insurance/3.png"
+              src="../Assets/insurance/3.png"
               alt="Step 3 Illustration"
               className="h-36 w-28"
             />
@@ -88,16 +88,16 @@ const Insurance = () => {
         </div>
 
         <div>
-        <img src="/assets/insurance/section3.png" className=' h-full w-full m-0' />
+        <img src="../Assets/insurance/section3.png" className=' h-full w-full m-0' />
         </div>
         <div>
-        <img src="/assets/insurance/section4.png" className=' h-full w-full mt-5 mb-5' />
+        <img src="../Assets/insurance/section4.png" className=' h-full w-full mt-5 mb-5' />
         </div>
         <div className='flex flex-col  text-[#FFDDCC] w-full justify-center items-center p-20'>
             <h4>💗YOUR SAFE PLACE💗</h4>
         </div>
         <div>
-        <img src="/assets/insurance/section5.jpg" className=' h-[75vh] w-full mt-5 mb-5' />
+        <img src="../Assets/insurance/section5.jpg" className=' h-[75vh] w-full mt-5 mb-5' />
         </div>
 
         <div className="flex flex-col items-center p-8 space-y-8">
@@ -163,7 +163,7 @@ const Insurance = () => {
     <div className="hero text-[#b09588] rounded-lg shadow-lg mb-10 h-[75vh]">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img 
-            src="/assets/insurance/section6.jpg" 
+            src="../Assets/insurance/section6.jpg" 
             className="max-w-sm rounded-lg shadow-2xl" 
             alt="Dog" 
           />
@@ -298,7 +298,7 @@ const Insurance = () => {
       </div>
     </div>
     <div>
-        <img src="/assets/insurance/section7.png" className=' h-[75vh] w-full mt-5 mb-5' />
+        <img src="../Assets/insurance/section7.png" className=' h-[75vh] w-full mt-5 mb-5' />
         </div>
 
     </div>
