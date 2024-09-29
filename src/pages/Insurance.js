@@ -31,7 +31,7 @@ const Insurance = () => {
           </div>
           <figure>
             <img
-              src="../Assets/insurance/1.png"
+              src="../Assets/Insurance/1.png"
               alt="Step 1 Illustration"
               className="h-36 w-28"
             />
