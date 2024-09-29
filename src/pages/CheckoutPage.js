@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Form, Input, Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import emailjs from 'emailjs-com';
 
 const CheckoutPage = ({setCheckoutModalOpen}) => {
   const [cartItems, setCartItems] = useState([]);
   const [form] = Form.useForm();
   const [isFormValid, setIsFormValid] = useState(false);
+  const email = localStorage.getItem("PawsUser");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -36,9 +38,40 @@ const CheckoutPage = ({setCheckoutModalOpen}) => {
     setIsFormValid(values.email && values.name && values.address);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit =async () => {
     setCheckoutModalOpen(false);
-    navigate('/thankyou'); // Navigate to the thank you page after order submission
+    if(!email){
+      toast.error("User not logged in");
+      return;
+    }
+
+    const generateOrderId = () => {
+      return `ORD-${Math.floor(100000 + Math.random() * 900000)}`; // Example: ORD-123456
+    };
+  
+    const orderId = generateOrderId();
+  
+    // Get product names
+    const productNames = cartItems.map(product => product.Product_name).join(', ');
+
+    const templateParams = {
+      to_email: email,
+      message: `Your order with ID ${orderId} has been confirmed. The products you ordered are: ${productNames}. Thank you for shopping with us!`,
+    };
+
+    try {
+      await emailjs.send(
+        'service_q2gitnd', // Replace with your emailjs service ID
+        'template_jq50zu6', // Replace with your emailjs template ID
+        templateParams,
+        'uwnqbKkyGCJaW3ENx'
+      );
+      toast.success("Order Placed successfully !")
+      navigate('/thankyou'); // Navigate to the thank you page after order submission
+    } catch (error) {
+      toast.error("Something went wrong !")
+      navigate('/thankyou'); // Navigate to the thank you page after order submission
+    }
   };
 
   return (
