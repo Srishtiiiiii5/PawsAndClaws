@@ -1,7 +1,7 @@
 import { Button, Form, Input, Modal } from 'antd'
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
-
+import emailjs from 'emailjs-com'
 
 
 const Insurance = () => {
@@ -11,14 +11,28 @@ const Insurance = () => {
   const [isFormValid, setIsFormValid] = useState(false);
 
   const handleFormChange = () => {
-    const values = form.getFieldsValue(['petName', 'name', 'petType', 'breed']);
-    setIsFormValid(values.petName && values.name && values.petType && values.breed);
+    const values = form.getFieldsValue([ 'email', 'petName', 'name', 'petType', 'breed']);
+    setIsFormValid(values.petName && values.name && values.petType && values.breed && values.email);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     setModalOpen(false);
+    try {
+      const templateParams = {
+        to_email: form.getFieldsValue(['email']).email,
+        message: `Your Insurance procedure is started. Thanks for applying !`,
+      };
+      await emailjs.send(
+        'service_q2gitnd', // Replace with your emailjs service ID
+        'template_jq50zu6', // Replace with your emailjs template ID
+        templateParams,
+        'uwnqbKkyGCJaW3ENx'
+      );
+      toast.success("Insurance successful") // Navigate to the thank you page after order submission
+    } catch (error) {
+      toast.error("Something went wrong !")
+    }
     form.resetFields();
-    toast.success("Insurance successful") // Navigate to the thank you page after order submission
   };
 
   return (
@@ -29,6 +43,13 @@ const Insurance = () => {
           layout="vertical"
           onFieldsChange={handleFormChange}
         >
+          <Form.Item
+            label="Email"
+            name="email"
+            rules={[{ required: true, message: 'Email is required' }]}
+          >
+            <Input placeholder="Enter Email" />
+          </Form.Item>
           <Form.Item
             label="Pet Name"
             name="petName"
